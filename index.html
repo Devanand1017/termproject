@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Cryptocurrency Tracker</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        /* Table Styles */
+        #crypto-table, #comparison-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        #crypto-table div, #comparison-table div {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real-Time Cryptocurrency Tracker</h1>
+        <p>Track and compare cryptocurrencies in real time.</p>
+    </header>
+    <main>
+        <section id="crypto-list">
+            <h2>Cryptocurrencies</h2>
+            <div id="crypto-table"></div>
+        </section>
+        <section id="comparison">
+            <h2>Compare Cryptocurrencies</h2>
+            <div id="comparison-table"></div>
+        </section>
+        <section id="preferences">
+            <h2>User Preferences</h2>
+            <div id="preferences-controls"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by CoinGecko API</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
